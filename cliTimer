@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#reset the timer
+count=0 
+
+#start the timer. will run until <ctrl>-c
+while true
+do 
+	#this line does nothing
+	echo -ne ""
+	echo -ne "  $count\r"
+	let count=$count+1
+	#update every one second
+	sleep 1
+done
